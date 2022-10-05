@@ -1,10 +1,10 @@
 var imgs = [
-		"https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=50",
-		"https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
-		"https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
+		"static/images/demo.png",
 		"https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
 		"https://images.unsplash.com/photo-1506361797048-46a149213205?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
-		"https://cdn.jsdelivr.net/gh/bdfd/Personal_Image_Repo/1.Favicon/hacker.png",
+		"https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
+		"https://images.unsplash.com/photo-1506361797048-46a149213205?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
+		"https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=50",
 	],
 	title = ["test 1", "test 2", "test 3", "test 4", "test 5", "test 6"];
 (n = imgs.length),
@@ -38,7 +38,9 @@ for (var i = 0; i < n; i++) {
 				class: "box",
 			},
 			innerHTML:
-				"<p><sub>Fig.</sub>" + (i + 1) + "</p><br/><p>Title:</p>" + title[i],
+				"<a href='https://www.w3schools.com' target='_blank'>Fig." +
+				(i + 1) +
+				"</a>",
 			width: "100%",
 			height: "100%",
 			borderLeft: i > 0 ? "solid 1px #eee" : "",
